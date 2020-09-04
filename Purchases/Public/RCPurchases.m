@@ -840,10 +840,6 @@ withPresentedOfferingIdentifier:(nullable NSString *)presentedOfferingIdentifier
     }
 }
 
-- (void)updateAllCaches {
-    [self updateAllCachesWithCompletionBlock:nil];
-}
-
 - (void)updateAllCachesWithCompletionBlock:(nullable RCReceivePurchaserInfoBlock)completion {
     [self fetchAndCachePurchaserInfoWithCompletion:completion];
     [self updateOfferingsCache:nil];
